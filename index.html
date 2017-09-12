@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Stack Overflow - Extraction of API elements for Documentation</title>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<div class="container">
+		<div class="intro">
+			<div class="left stack-image"></div>
+			<div class="explanation">
+				<h1>StackOverflow - Extraction of API elements for Documentation</h1>
+				<p>You can search by topic for questions on APIs of interest from Stack Overflow to help you see and learn more code examples.  Find code of answered questions for a topic you want to learn about.</p>
+				<p>Sometimes, you also need just code examples of specific APIs. This demo also lets you search for the top code examples for a tag!</p>
+			</div>
+		</div>
+		<hr>
+		<div class="stack">	
+			<h3>Get Questions</h3>
+			<p>Find questions by keyword. You can use tags or anything you're interested in: </p>
+			<form class="questions-getter">
+				<input type="text" placeholder='e.g., "Facebook graph API" or "Facebook"' name="query" size="40" autofocus required>
+				<input type="submit" value="Submit">
+			</form>
+			<h3>Display the top Answers for a Tag</h3>
+			<form class="answers-getter">
+				<input type="text" placeholder="e.g., Spotify" name="answers" size="40"  required>
+				<input type="submit" value="Submit">
+			</form>
+		</div>
+		<div class="results-container">
+			<div class="search-results"></div>
+			<div class="results"></div>
+		</div>
+	</div>
+	<div class="templates hidden">
+		<dl class="result question">
+			<dt>Question</dt>
+				<dd class="question-text"><a href="" target="_blank"></a></dd>
+			<dt>Asked</dt>
+				<dd class="asked-date"></dd>
+			<dt>Viewed</dt>
+				<dd class="viewed"></dd>
+			<dt>Asker</dt>
+				<dd class="asker"></dd>
+		</dl>
+
+		<dl class="result top-answers">
+			<dt>Display Answer Body</dt>
+				<dd class="answer-body"></dd>
+			<dt>Scores</dt>
+				<dd class="answer-score"></dd>
+		</dl>
+		<div class="error">
+			<p>Error ! things went wrong with your request. Here's what we know:</p>
+		</div>
+	</div>
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="js/app.js"></script>
+</body>
+</html>

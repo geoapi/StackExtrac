@@ -1,0 +1,43 @@
+.container {
+	margin: 3em auto;
+	width: 600px;
+}
+
+.hidden {
+	display: none;
+}
+
+.left {
+	float: left;
+}
+
+.stack-image {
+	background: url('../images/so-logo.png') no-repeat center center;
+	width:440px;  
+    height: 200px;
+	background-size:contain;
+	
+}
+
+.intro {
+	margin-bottom: 1em;
+}
+
+.stack {
+	clear: both;
+}
+
+.inspiration { 
+	margin-left: 3em;
+}
+
+.result {
+	border: 1px solid black;
+	padding: 5px;
+	margin: 0 auto 1em auto;
+}
+
+.error {
+	background-color: #F78181;
+	padding: 1em;
+}
