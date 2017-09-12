@@ -22,7 +22,7 @@ var showQuestion = function(question) {
 	// set the html elements of the OP asker
 	var asker = result.find('.asker');
 	asker.html('<p>Name: <a target="_blank" '+
-		'href=http://stackoverflow.com/users/' + question.owner.user_id + ' >' +
+		'href=https://stackoverflow.com/users/' + question.owner.user_id + ' >' +
 		question.owner.display_name +
 		'</a></p>' +
 		'<p>Reputation: ' + question.owner.reputation + '</p>' +
@@ -80,7 +80,7 @@ var getTopAnswers = function(tag, ids) {  // the parameteres we need to pass in 
 	};
 	// console.log(request, ids, tag);
 	$.ajax({
-		url: "http://api.stackexchange.com/2.2/questions/"+ ids +"/answers?order=desc&sort=activity&filter=withbody&key=keqVr01zTBktmTggfO2lMg((",
+		url: "https://api.stackexchange.com/2.2/questions/"+ ids +"/answers?order=desc&sort=activity&filter=withbody&key=keqVr01zTBktmTggfO2lMg((",
 		data: request,  
 		dataType: "jsonp", // why jsonp ? https://stackoverflow.com/questions/2067472/what-is-jsonp-all-about
 		type: "GET"
